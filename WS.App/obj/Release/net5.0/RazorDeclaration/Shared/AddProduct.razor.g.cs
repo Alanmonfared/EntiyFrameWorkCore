@@ -104,14 +104,15 @@ using System.Threading;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 87 "C:\Users\alana\source\repos\InlamningsuppgiftBackend\WebShop\WS.App\Shared\AddProduct.razor"
+#line 76 "C:\Users\alana\source\repos\InlamningsuppgiftBackend\WebShop\WS.App\Shared\AddProduct.razor"
        
 
     private List<Category> categories = new();
 
     private async Task GetCategoriesAsync()
     {
-        categories = await Http.GetFromJsonAsync<List<Category>>("");
+        categories = await Http.GetFromJsonAsync<List<Category>>("https://localhost:44356/api/categories" );
+
     }
 
     protected override async Task OnInitializedAsync()
@@ -130,13 +131,20 @@ using System.Threading;
     public Product CategoryItems { get; set; }
 
 
+    private async Task OnInputFileChanged(InputFileChangeEventArgs inputFileChangeEvent)
+    {
 
-#line default
-#line hidden
-#nullable disable
-        __builder.AddMarkupContent(0, "    \r\n");
-#nullable restore
-#line 126 "C:\Users\alana\source\repos\InlamningsuppgiftBackend\WebShop\WS.App\Shared\AddProduct.razor"
+        var files = inputFileChangeEvent.GetMultipleFiles();
+
+        foreach (var file in files)
+        {
+            var buffer = new byte[file.Size];
+            await file.OpenReadStream().ReadAsync(buffer);
+            product.Img = $"data:image/png;base64,{Convert.ToBase64String(buffer)}";
+        }
+
+
+    }
 
 
 
