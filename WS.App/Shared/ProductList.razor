@@ -1,0 +1,64 @@
+﻿@using System.Threading
+
+
+<div class="container">
+    <div class="row row-cols-7 row-cols-md-4 g-3 mt-5 ">
+
+        
+        @if (products == null)
+        {
+        <div id="app">
+            <div id="loading-test" >
+                <div class="loading  d-flex justify-content-start align-items-center vh-100 animate__animated animate__bounceInLeft" data-mdb-parent-selector="#loading-test">
+                    <div class="spinner-border loading-icon" role="status"></div>
+                    <span class="loading-icon mx-4 ">Loading...</span>
+                </div>
+            </div>
+        </div>
+        }
+        else
+
+
+
+        {
+
+
+            @foreach (var product in products)
+            {
+                <ProductItem Items="@product" />
+
+
+
+            }
+        }
+
+
+    </div>
+</div>
+
+
+
+@code {
+    public Product[] products;
+
+
+    private async Task GetProductsAsync()
+    {
+        products = await Http.GetFromJsonAsync<Product[]>("https://localhost:44356/api/Products");
+    }
+
+    protected override void OnInitialized()
+    {
+        var timer = new Timer(new TimerCallback(_ => InvokeAsync(() => StateHasChanged())), null, 1000, 1000);
+    }
+
+
+
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+
+    {
+        await GetProductsAsync();
+    }
+
+}

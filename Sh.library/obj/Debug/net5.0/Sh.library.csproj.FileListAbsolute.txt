@@ -1,0 +1,12 @@
+C:\Users\alana\source\repos\InlamningsuppgiftBackend\WebShop\Sh.library\bin\Debug\net5.0\Sh.library.deps.json
+C:\Users\alana\source\repos\InlamningsuppgiftBackend\WebShop\Sh.library\bin\Debug\net5.0\Sh.library.dll
+C:\Users\alana\source\repos\InlamningsuppgiftBackend\WebShop\Sh.library\bin\Debug\net5.0\ref\Sh.library.dll
+C:\Users\alana\source\repos\InlamningsuppgiftBackend\WebShop\Sh.library\bin\Debug\net5.0\Sh.library.pdb
+C:\Users\alana\source\repos\InlamningsuppgiftBackend\WebShop\Sh.library\obj\Debug\net5.0\Sh.library.csproj.AssemblyReference.cache
+C:\Users\alana\source\repos\InlamningsuppgiftBackend\WebShop\Sh.library\obj\Debug\net5.0\Sh.library.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alana\source\repos\InlamningsuppgiftBackend\WebShop\Sh.library\obj\Debug\net5.0\Sh.library.AssemblyInfoInputs.cache
+C:\Users\alana\source\repos\InlamningsuppgiftBackend\WebShop\Sh.library\obj\Debug\net5.0\Sh.library.AssemblyInfo.cs
+C:\Users\alana\source\repos\InlamningsuppgiftBackend\WebShop\Sh.library\obj\Debug\net5.0\Sh.library.csproj.CoreCompileInputs.cache
+C:\Users\alana\source\repos\InlamningsuppgiftBackend\WebShop\Sh.library\obj\Debug\net5.0\Sh.library.dll
+C:\Users\alana\source\repos\InlamningsuppgiftBackend\WebShop\Sh.library\obj\Debug\net5.0\ref\Sh.library.dll
+C:\Users\alana\source\repos\InlamningsuppgiftBackend\WebShop\Sh.library\obj\Debug\net5.0\Sh.library.pdb

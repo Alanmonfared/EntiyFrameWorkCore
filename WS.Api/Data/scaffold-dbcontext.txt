@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\alana\\source\\repos\\InlamningsuppgiftBackend\\WebShop\\WS.Api\\Data\\ws-database.mdf;Integrated Security=True;Connect Timeout=30" Microsoft.EntityFrameworkCore.SqlServer -ContextDir Data -Context SqlContext -OutputDir Entities -DataAnnotation -Force 

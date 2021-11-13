@@ -1,0 +1,50 @@
+﻿
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+.hov:hover {
+    border: 1px solid #000000;
+    background-color: rgba(255, 255, 255, 0.253);
+    color: rgb(0, 0, 0);
+}
+
+
+
+.if-card:hover {
+    color: rgb(0, 136, 255);
+    cursor: pointer;
+    /* border: 1px solid red; */
+    background-color: rgb(227, 225, 225);
+}
+
+
+.if-hover:hover {
+    color: rgb(0, 136, 255);
+    cursor: pointer;
+    /* border: 1px solid red; */
+    background-color: rgb(48, 44, 44);
+}
+
+
+.gradient {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.gradient- {
+    background: rgb(52,47,47);
+    background: linear-gradient(180deg, rgba(52,47,47,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+
+
+.gfg {
+    margin: 3%;
+    position: relative;
+}
+
+.first-txt {
+    position: absolute;
+    bottom: 50px;
+}
